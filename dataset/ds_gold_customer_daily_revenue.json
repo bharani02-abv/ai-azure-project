@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "*.parquet",
 				"folderPath": "customer_daily_revenue",
 				"fileSystem": "gold"
 			},
