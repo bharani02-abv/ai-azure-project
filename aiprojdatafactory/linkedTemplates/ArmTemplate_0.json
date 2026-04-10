@@ -107,7 +107,6 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "*.parquet",
 						"folderPath": "customer_daily_revenue",
 						"fileSystem": "gold"
 					},
@@ -133,7 +132,6 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "*.parquet",
 						"folderPath": "top_customers_by_revenue",
 						"fileSystem": "gold"
 					},
@@ -303,6 +301,8 @@
 								"storeSettings": {
 									"type": "AzureBlobFSReadSettings",
 									"recursive": true,
+									"wildcardFolderPath": "customer_daily_revenue",
+									"wildcardFileName": "*.parquet",
 									"enablePartitionDiscovery": false
 								},
 								"formatSettings": {
@@ -450,6 +450,8 @@
 								"storeSettings": {
 									"type": "AzureBlobFSReadSettings",
 									"recursive": true,
+									"wildcardFolderPath": "top_customers_by_revenue",
+									"wildcardFileName": "*.parquet",
 									"enablePartitionDiscovery": false
 								},
 								"formatSettings": {
