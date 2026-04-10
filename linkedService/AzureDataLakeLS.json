@@ -1,0 +1,10 @@
+{
+	"name": "AzureDataLakeLS",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://aiprojstoragedatalake.dfs.core.windows.net/"
+		}
+	}
+}
