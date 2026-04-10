@@ -1,0 +1,48 @@
+{
+	"name": "ds_sql_customer_daily_revenue",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "order_date",
+				"type": "date"
+			},
+			{
+				"name": "customer_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "customer_name",
+				"type": "varchar"
+			},
+			{
+				"name": "country",
+				"type": "varchar"
+			},
+			{
+				"name": "industry",
+				"type": "varchar"
+			},
+			{
+				"name": "daily_revenue",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "order_count",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "customer_daily_revenue"
+		}
+	}
+}

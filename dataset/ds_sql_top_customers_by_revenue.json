@@ -1,0 +1,49 @@
+{
+	"name": "ds_sql_top_customers_by_revenue",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "customer_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "customer_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "country",
+				"type": "nvarchar"
+			},
+			{
+				"name": "industry",
+				"type": "nvarchar"
+			},
+			{
+				"name": "total_revenue",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "total_orders",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "avg_order_value",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "top_customers_by_revenue"
+		}
+	}
+}
