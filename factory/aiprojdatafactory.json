@@ -1,0 +1,9 @@
+{
+	"name": "aiprojdatafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "fd39e042-4e0d-409f-867c-5d41f053a4d2",
+		"tenantId": "e2e69aff-44ef-4683-80a0-15a453a24fc5"
+	}
+}
