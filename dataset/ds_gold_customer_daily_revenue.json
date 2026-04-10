@@ -1,0 +1,21 @@
+{
+	"name": "ds_gold_customer_daily_revenue",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "part-00000-tid-1311392405564556336-731f9e1f-72f8-40a8-ae6c-bce0949ce971-15-1-c000.snappy.parquet",
+				"folderPath": "customer_daily_revenue",
+				"fileSystem": "gold"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
