@@ -11,9 +11,29 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accessToken' of 'AzureDatabricksLS'"
 		},
+		"AzureSqlDatabaseLS_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabaseLS'"
+		},
+		"AzureDataLakeLS_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://aiprojstoragedatalake.dfs.core.windows.net/"
+		},
 		"AzureDatabricksLS_properties_typeProperties_existingClusterId": {
 			"type": "string",
 			"defaultValue": "0409-030633-o49ukfoi"
+		},
+		"AzureSqlDatabaseLS_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "aiprojdbserver.database.windows.net"
+		},
+		"AzureSqlDatabaseLS_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "aiprojdatabase"
+		},
+		"AzureSqlDatabaseLS_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "abvadmin"
 		},
 		"containerUri": {
 			"type": "string",
@@ -45,8 +65,23 @@
 					"AzureDatabricksLS_accessToken": {
 						"value": "[parameters('AzureDatabricksLS_accessToken')]"
 					},
+					"AzureSqlDatabaseLS_password": {
+						"value": "[parameters('AzureSqlDatabaseLS_password')]"
+					},
+					"AzureDataLakeLS_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeLS_properties_typeProperties_url')]"
+					},
 					"AzureDatabricksLS_properties_typeProperties_existingClusterId": {
 						"value": "[parameters('AzureDatabricksLS_properties_typeProperties_existingClusterId')]"
+					},
+					"AzureSqlDatabaseLS_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabaseLS_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabaseLS_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabaseLS_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabaseLS_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabaseLS_properties_typeProperties_userName')]"
 					}
 				}
 			},

@@ -8,8 +8,23 @@
 		"AzureDatabricksLS_accessToken": {
 			"value": ""
 		},
+		"AzureSqlDatabaseLS_password": {
+			"value": ""
+		},
+		"AzureDataLakeLS_properties_typeProperties_url": {
+			"value": "https://aiprojstoragedatalake.dfs.core.windows.net/"
+		},
 		"AzureDatabricksLS_properties_typeProperties_existingClusterId": {
 			"value": "0409-030633-o49ukfoi"
+		},
+		"AzureSqlDatabaseLS_properties_typeProperties_server": {
+			"value": "aiprojdbserver.database.windows.net"
+		},
+		"AzureSqlDatabaseLS_properties_typeProperties_database": {
+			"value": "aiprojdatabase"
+		},
+		"AzureSqlDatabaseLS_properties_typeProperties_userName": {
+			"value": "abvadmin"
 		},
 		"containerUri": {
 			"value": ""
